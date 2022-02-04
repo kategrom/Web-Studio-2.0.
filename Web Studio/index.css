@@ -1,0 +1,549 @@
+*{
+    box-sizing: border-box;
+}
+
+body , html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+ul , li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    padding: 24px 0;
+
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-col{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list{
+    display: flex;
+}
+
+.menu-item{
+    margin-right: 50px;
+}
+
+.menu-item:last-child{
+    margin-right: 0;
+}
+
+.menu-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    
+    color: #212121;    
+    position: relative;
+}
+
+.menu-link-before::before{
+    content: "";
+    display: block;
+    
+    background: #2196F3;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.menu-link:hover{
+    color: #2196F3;
+}
+
+.menu-link-active{
+    color: #2196F3;
+}
+
+.logo{
+    margin-right: 93px;
+}
+
+.email , .tel{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+}
+
+.email{
+    margin-right: 50px;
+}
+
+.email:hover{
+    color: #2196F3;
+}
+
+.tel:hover{
+    color: #2196F3;
+}
+
+/* section preview */
+
+.preview{
+    background: url(./photo-logo.png);
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 94px;
+}
+
+.preview .container{
+    text-align: center;
+}
+
+.preview-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+    width: 696px;
+    
+    color: #FFFFFF; 
+    
+    margin-bottom: 30px;
+}
+
+.button{
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;    
+    border: none;
+    padding: 16px 29px;
+
+    cursor: pointer;
+}
+
+.button span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;    
+}
+
+.button-send span::after{
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url(./icon\ send.png) center no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* section options */
+
+.options{
+    margin-bottom: 94px;
+}
+
+.options-list{
+    display: flex;
+}
+
+.options-item{
+    margin-right: 30px;
+}
+
+.options-item:last-child{
+    margin-right: 0;
+}
+
+.options-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #212121;    
+
+    margin-bottom: 10px;
+}
+
+.options-text{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+
+.options-img{
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+/* section doing */
+
+.doing{
+    margin-bottom: 94px;
+}
+
+.doing-img{
+    width: 100%;
+    height: 100%;
+}
+
+.doing-subtitle{
+    background: rgba(47, 48, 58, 0.8);
+
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+    padding: 27px 0;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.doing-item{
+    margin-right: 30px;
+
+    width: 370px;
+    height: 294px;
+
+    position: relative;
+}
+
+.doing-item:last-child{
+    margin-right: 0;
+}
+
+.doing-list{
+    display: flex;
+}
+
+.doing-img:last-child{
+    margin-right: 0;
+}
+
+.doing-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* section team */
+
+.team{
+    background: #F5F4FA;
+
+    padding: 94px 0;
+}
+
+.team-img{
+    width: 270px;
+    height: 260px;
+
+    margin-bottom: 30px;
+}
+
+.team-list{
+    display: flex;
+}
+
+.team-item{
+    margin-right: 30px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; 
+    
+    padding-bottom: 30px;
+}
+
+.team-item:last-child{
+    margin-right: 0;
+}
+
+.team-name{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    margin-bottom: 10px;
+}
+
+.team-position{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #757575;    
+}
+
+/* section clients */
+
+.clients{
+    padding: 94px 0;
+}
+
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    padding-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+}
+
+.clients-link{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 90px;
+}
+
+.clients-link:hover{
+    border-color: #2196F3;
+}
+
+.clients-item{
+    margin-right: 30px;
+}
+
+.clients-item:last-child{
+    margin-right: 0;
+}
+
+/* footer */
+
+.footer{
+    background: #2F303A;
+    padding: 60px 0;
+}
+
+.footer .container{
+    display: flex;
+}
+
+.footer .logo{
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.footer .email{
+    margin-bottom: 9px;
+    margin-right: 0;
+}
+
+.footer-col-first{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-second{
+    margin-left: 70px;
+}
+
+.footer-col-third{
+    margin-left: 93px;
+}
+
+.adress{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;    
+
+    margin-bottom: 9px;
+}
+
+.footer-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;    
+
+    margin-bottom: 20px;
+}
+
+.socials-list{
+    display: flex;
+    align-items: center;
+}
+
+.socials-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background: rgba(225, 225, 225, 0.1);
+}
+.socials-link:hover{
+    background: #2196F3;
+}
+
+.socials-item{
+    margin-right: 10px;
+}
+
+.socials-item:last-child{
+    margin-right: 0;
+}
+
+.input{
+    width: 358px;
+    height: 50px;
+    background: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.input:focus{
+    border-color: #2196F3;
+}
+
+.footer-input-block{
+    display: flex;
+}
+
+.footer-input{
+    margin-right: 12px;
+}
+
+.team-item .socials{
+    margin-top: 16px;
+}
+
+.team-item .socials-list{
+    justify-content: center;
+}
+
+.team-item .socials-link{
+    background: #2196F3;
+}
+
+.team-item .socials-link:hover{
+    background: #174f7c;
+}
